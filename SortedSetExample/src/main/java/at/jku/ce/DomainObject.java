@@ -41,4 +41,9 @@ public class DomainObject {
 	public void setName(final String pname) {
 		this.name = pname;
 	}
+	
+	@override
+	public String toString() {
+		 return "DomainObject [name=" + name + ", comment=" + comment + ", uuid=" + uuid + "]"; 
+	}
 }
