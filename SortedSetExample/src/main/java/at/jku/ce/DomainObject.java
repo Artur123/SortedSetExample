@@ -13,11 +13,11 @@ public class DomainObject {
 	* Default constructor
 	*/
 
-	public DomainObject() {
+	protected DomainObject() {
 		super();
 	}
 
-	public DomainObject(String name, String comment) {
+	protected DomainObject(String name, String comment) {
 		super();
 		this.name = name;
 	}
@@ -42,7 +42,7 @@ public class DomainObject {
 		this.name = pname;
 	}
 	
-	@override
+	@Override
 	public String toString() {
 		 return "DomainObject [name=" + name + ", comment=" + comment + ", uuid=" + uuid + "]"; 
 	}
