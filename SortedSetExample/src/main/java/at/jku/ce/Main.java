@@ -22,7 +22,7 @@ public class Main {
 		objectSet.add(new DomainObject("Claudia", "Kommentar"));
 		
 		for (DomainObject domainObject : objectSet) {
-			LOGGER.debug(domainObject.getUuid);
+			LOGGER.debug(domainObject.getUuid());
 		}
 	}
 
