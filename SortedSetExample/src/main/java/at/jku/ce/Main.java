@@ -15,11 +15,11 @@ public class Main {
 	public static void main(String[] args) {
 
 		Set<DomainObject> objectSet = new HashSet<DomainObject>();
-		objectSet.add(new DomainObject("Helga", "Kommentar"));
-		objectSet.add(new DomainObject("Walter", "Kommentar"));
-		objectSet.add(new DomainObject("Hans", "Kommentar"));
-		objectSet.add(new DomainObject("Paula", "Kommentar"));
-		objectSet.add(new DomainObject("Claudia", "Kommentar"));
+		objectSet.add(DomainFactory.createDomainObject("Helga", "Kommentar"));
+		objectSet.add(DomainFactory.createDomainObject("Walter", "Kommentar"));
+		objectSet.add(DomainFactory.createDomainObject("Hans", "Kommentar"));
+		objectSet.add(DomainFactory.createDomainObject("Paula", "Kommentar"));
+		objectSet.add(DomainFactory.createDomainObject("Claudia", "Kommentar"));
 		
 		for (DomainObject domainObject : objectSet) {
 			LOGGER.debug(domainObject.getUuid());
