@@ -22,7 +22,7 @@ public class DomainObject {
 		this.name = name;
 	}
 
-	public String getUuId() {
+	public String getUuid() {
 		return uuid;
 	}
 
@@ -42,7 +42,7 @@ public class DomainObject {
 		this.name = pname;
 	}
 	
-	@override
+	@Override
 	public String toString() {
 		 return "DomainObject [name=" + name + ", comment=" + comment + ", uuid=" + uuid + "]"; 
 	}
