@@ -22,7 +22,7 @@ public class DomainObject {
 		this.name = name;
 	}
 
-	public String getUuid() {
+	public String getUuId() {
 		return uuid;
 	}
 
